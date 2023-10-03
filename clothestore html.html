@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/f4c2e68b36.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cloth.css">
+   
+</head>
+<style>
+    *{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+
+nav{
+    background-color:rgb(255,255,255);
+
+    position: fixed;
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    top: 0;
+    
+    
+  
+  
+   
+   
+}
+
+
+ul li {
+    float: left;
+    background-color:rgb(255,255,255);
+   
+   padding: 20px 30px 10px 30px;
+    border-radius: 2px;
+   border-style: none;
+   
+   transition: ease-in o.2s;
+   top: 0px;
+   list-style: none;
+   
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   text-decoration: none;
+   
+}
+
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul li:hover{
+    background-color: rgb(254,27,107);
+}
+input{
+    background-color: #ffff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   padding: 10px 200px 10px 200px;
+    border-radius: 25px;
+   border-style: none;
+   margin-right: 10px;
+  margin-left: 150px;
+
+}
+img{
+    width: 100%;
+    height: 100vh;
+    mix-blend-mode:transparent;
+    
+}
+.text ,h1{
+    position:absolute;
+    top: 20%;
+    left: 40px;
+    font-size: 56px;
+    font-family: barlow condensed,sans-serif;
+    text-transform: capitalize   ;
+    width: 256px;
+   
+}
+h4{
+    position: relative;
+    top: 311px;
+    left: 40px;
+    font-family: barlow condensed,sans-serif;
+    font-size: 50%;
+  
+
+    
+   
+}
+.shop{
+position: relative;
+    top: 290px;
+  
+    font-family: barlow condensed,sans-serif;
+    font-size: 50%;}
+
+.gender{
+background-color: #ffff;
+box-shadow:box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; ;
+width:100%;
+height: 100%;
+display:flex;
+flex-direction:row;
+grid-gap:1px;
+justify-content: space-around;
+margin-left: 50px
+
+}
+#gender{
+position: relative;
+left: 500px;
+
+}
+.container{
+    padding-bottom: 150px;
+    width: 30%;
+height: 50%;
+padding-bottom: 50px;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; 
+border-radius: 10px;
+margin: 10px 10px 10px 10px;
+}
+.container p{
+    position: relative;
+    top: 96px;
+    left: -51px;
+    
+}
+
+.container img{
+width:100%;
+height: 90%;
+background-color: #ffff;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+
+
+
+
+}
+
+
+
+button{
+background-color: #ffff;
+border-radius: 5px;
+border-style: none;
+padding:  15px 20px 15px 20px;;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; 
+font-family: barlow condensed,sans-serif;
+position: relative;
+z-index: -1;
+
+}
+.explorebtn{
+    position: relative;
+    margin-left: 92px;
+    margin-top: 102px;
+}
+p{
+position: relative;
+margin-top: -85px;
+margin-left: 150px;
+}
+h2{
+text-align: center;
+margin-top: 150px;
+}
+.cat{
+display: flex;
+flex-wrap: wrap;
+justify-content: center; 
+
+
+
+
+
+}
+.product img{
+width: 100%;
+height: 90%;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+
+
+}
+.product{
+width: 20%;
+height: 50%;
+padding-bottom: 10px;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; 
+border-radius: 10px;
+margin: 10px 10px 10px 10px;
+
+
+
+
+
+}
+.product p{
+position: relative;
+margin-top: 5px;
+margin-left: 4px;
+}
+.contact{
+    width:100%;
+  position: relative;
+  left: 100px;
+}
+
+
+
+/* for small screen devices */
+@media screen and (max-width:1080px)
+{
+h1{
+    font-size: 36px;
+    font-family: barlow condensed,sans-serif;
+    text-transform: capitalize   ;
+    width: 100px;
+
+}
+nav{
+background-color:rgb(255,255,255);
+display: flex;
+flex-wrap: wrap;
+
+position: fixed;
+width: 100%;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+top: 0;}
+.cat{
+    display: flex;
+  flex-wrap: wrap;
+    justify-content: center; 
+    
+    
+    
+    
+    
+    }
+    .product img{
+    width: 100%;
+    height: 90%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    
+    
+    }
+    .product{
+    width: 50%;
+    height: 60%;
+    padding-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; 
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+}
+
+.gender{
+  
+    display:flex;
+    flex-direction:column;
+    
+    justify-content: center;
+    position: relative;
+    left: 244px;
+    
+    
+    }
+    #gender{
+    position: relative;
+    left: 500px;
+    
+    }
+    .container{
+        padding-bottom: 150px;
+        width: 30%;
+    height: 50%;
+    padding-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; 
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+    }
+    .container p{
+        position: relative;
+        top: 96px;
+        left: -51px;
+        
+    }
+    
+    .container img{
+    width:100%;
+    height: 90%;
+    background-color: #ffff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+}
+.shop{
+    position: relative;
+        top: 321px;
+      
+        font-family: barlow condensed,sans-serif;
+        font-size: 69%;}
+        nav ul input{
+            display: block;
+        }
+    input{
+visibility: hidden;
+    }
+i{
+    position: relative;
+    top :-15px
+    font-size:larger
+}
+
+}
+</style>
+<body>
+   <div class="main">
+    <div>
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="womens.html">womens clothing</a> </li>
+                <li><a href="#"></a> mens clothing</li>
+                
+               
+                <li><a href="my cart">my cart</a></li>
+                
+                <input type="text" placeholder="what are you searching for ?">
+              
+               
+            </ul>
+          </nav>
+       
+    </div>
+    <div class="image">
+       
+        <img src="https://www.lux-review.com/wp-content/uploads/2020/10/sale-1536x864.jpg"">
+        <div class="text">
+            <h1>biggest deals on top brands </h1><h4>up to 40% off</h4>
+            <button class="shop">shop now</button>
+            
+            
+        </div>
+        <h2>shop by gender</h2>
+        <div class="gender">
+           
+         
+            <div class="container">
+                <img src="https://ae01.alicdn.com/kf/HTB1d9pfLpXXXXX7aXXXq6xXFXXXz/2016-New-Design-Fashion-Full-Flowers-Printing-Mens-Long-Sleeve-Shirt-Business-Men-Casual-Floral-Dress.jpg" alt="">
+                <p>womens clothing</p>
+                <button  class="explorebtn"><a href="womens.html">explore now</a></button>
+            </div>
+            <div class="container">
+                <img src="http://www.generationcedar.com/main/wp-content/uploads/2013/01/low-shirt.jpg" alt="">
+                <p>mens clothing</p>
+                <button class="explorebtn"> 
+                    <a href="#">explore now</a>
+                </button>
+            </div>
+     </div>
+     <h2>shop by category</h2>
+     <div class="cat">
+      
+           <div class="product">
+            <img src="https://www.dancecheerskate.com/_inv/235A2588E27E42A480ADCFCAFE3DCD0C/3001-halt5.jpg" alt="">
+            <p> t shirts <br>starts from rs/-399</p>
+            
+                <button class="productbtn">shop now</button>
+            <button id="productbtn">add to cart</button>
+            
+           </div>
+           <div  class="product">
+            <img src="https://honiton-hearing.co.uk/wp-content/uploads/2020/06/Apple-earpods-1030x1030.jpg" alt="">
+            <p> ear pods <br> starts from rs/-1000</p>
+            <button class="productbtn">shop now</button>
+            <button id="productbtn">add to cart</button>
+
+           </div>
+           <div class="product">
+            <img src="https://i.pinimg.com/736x/86/ea/cf/86eacf0dc2337076ab0d0643865e88e4--mens-wool-sweaters-irish-sweaters.jpg" alt="">
+            <p>sweater <br>starts from rs/-600</p>
+            <button class="productbtn">shop now</button>
+            <button id="productbtn">add to cart</button>
+           </div>
+           <div  class="product">
+            <img src="https://images5.qualitylogoproducts.com/custom-waterbottles/aluminum-petite-bottle-superextralarge.jpg" alt="">
+            <p>water bottles<br>starts from rs/-199</p>
+            <button class="productbtn">shop now</button>
+            <button id="productbtn">add to cart</button>
+           </div>
+           <div  class="product">
+            <img src="https://ae01.alicdn.com/kf/HTB11X0RXcfrK1Rjy1Xdq6yemFXaT/Brand-Designer-Cat-Eye-Glasses-Frames-Women-Metal-Optical-EyeGlasses-Fashion-Eyewear-Computer-Glasses-45257.jpg" alt="">
+            <p>glasses <br>starts from rs/-600</p>
+            <button class="productbtn">shop now</button>
+            <button id="productbtn">add to cart</button>
+           </div>
+           <div  class="product">
+            <img src="http://clipart-library.com/images/kiMKpzk4T.jpg" alt="">
+            <p>caps <br>starts from rs/-299</p>
+            <button class="productbtn">shop now</button>
+            <button id="productbtn">add to cart</button>
+            
+           </div>
+           <div  class="product">
+            <img src="http://www.shopmyexchange.com/products/images/xlarge/2736179_1007.jpg" alt="">
+            <p>bag packs <br>starts from rs/-499</p>
+            <button class="productbtn">shop now</button>
+            <button id="productbtn">add to cart</button>
+    
+           </div>
+           <div  class="product">
+            <img src="https://guhaha.com/wp-content/uploads/2020/06/H7877ff1250ff4393a3b7b6c42d70a153B-1.jpg" alt="">
+            <p>sports shoes <br>starts from rs/-699</p>
+            <button class="productbtn">shop now</button>
+            <button id="productbtn">add to cart</button>
+           </div>
+          <div class="contact">
+            <h3>contact us !</h3>
+            
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label"> name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="enter your name">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">queries</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="submit your queries">
+                 <br><button style="background-color:  rgb(254,27,107);">submit</button><br>
+              </div>
+        
+          </div>
+  
+   </div>
+</body>
+</html>
